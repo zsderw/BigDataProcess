@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+fname = input("Enter file name : ")
+
 from_dict = dict()
 
-with open("mbox-short.txt", "rt") as fp:
+with open(fname, "rt") as fp:
     for line in fp:
         if line.startswith("From: ") :
             str_arr = line.split()
