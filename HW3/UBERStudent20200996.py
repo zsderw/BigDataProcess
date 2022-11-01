@@ -7,7 +7,7 @@ readfile = sys.argv[1]
 writefile = sys.argv[2]
 
 def funcday(date):
-	weeks = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
+    weeks = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
     day = date.weekday()
     return weeks[day]
 

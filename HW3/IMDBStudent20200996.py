@@ -7,8 +7,8 @@ readfile = sys.argv[1]
 writefile = sys.argv[2]
 
 with open(readfile, "rt") as fp:
-	for line in fp:
-    	arr = line.split('::')
+    for line in fp:
+        arr = line.split('::')
         arr2 = list(map(lambda x : x.strip(), arr[2].split('|')))
         for i in arr2:
             if i not in dictt:
